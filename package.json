@@ -9,11 +9,19 @@
     "dev": "bun run --bun astro dev",
     "build": "bun run --bun astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.4.4",
+    "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "daisyui": "^5.5.20",
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.8.0"
   }
 }
