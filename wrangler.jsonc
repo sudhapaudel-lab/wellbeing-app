@@ -1,0 +1,4 @@
+{
+    "name": "wellbeing-app",
+    "main": "src/server/index.ts"
+}

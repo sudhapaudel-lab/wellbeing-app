@@ -1,0 +1,13 @@
+---
+import BaseLayout      from '../layouts/BaseLayout.astro';
+import Navbar          from '../components/nav/Navbar';
+import MoodCheckinCard from '../components/mood/MoodCheckinCard';
+import Footer          from '../components/layout/Footer';
+---
+<BaseLayout title="Mood Check-in — Melo" description="Daily mood check-in.">
+  <Navbar client:load />
+  <main class="flex-1 py-6 sm:py-10">
+    <MoodCheckinCard client:load />
+  </main>
+  <Footer client:load />
+</BaseLayout>

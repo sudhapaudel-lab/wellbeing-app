@@ -1,12 +1,20 @@
 ---
-import Hello from "../components/Hello.astro";
-import Layout from "../layouts/Layout.astro";
-import { Hi } from "../components/Hi";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/nav/Navbar";
+import HeroSection from "../components/home/HeroSection";
+import BalanceFeatures from "../components/home/BalanceFeatures";
+import MySpaceGroup from "../components/groups/MySpaceGroup";
+import SafetySection from "../components/safety/SafetySection";
+import Footer from "../components/layout/Footer";
 ---
 
-<Layout>
-  <Hello />
-</Layout>
+<BaseLayout title="Melo - Your Mental Wellness Companion">
+  <Navbar client:load />
+  <main>
+    <HeroSection client:load />
+    <BalanceFeatures client:load />
+    <MySpaceGroup client:load />
+    <SafetySection client:load />
+  </main>
+  <Footer client:load />
+</BaseLayout>

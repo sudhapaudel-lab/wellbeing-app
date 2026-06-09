@@ -1,1 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Nunito:wght@300;400;500;600;700&display=swap');
+
 @import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light;
+}
+
+:root {
+  --melo-cream:       #F9F6F1;
+  --melo-parchment:   #F2EDE4;
+  --melo-sage:        #8AAF8E;
+  --melo-sage-light:  #B8D4BC;
+  --melo-blush:       #D4748C;
+  --melo-blush-light: #E8A8B8;
+  --melo-lavender:    #9B7EC8;
+  --melo-lavender-lt: #C5B0E0;
+  --melo-mauve:       #B8608A;
+  --melo-gold:        #D4A847;
+  --melo-gold-light:  #EDD08A;
+  --melo-text:        #3D2E2E;
+  --melo-text-muted:  #7A6060;
+  --melo-border:      #E0D8D0;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Nunito', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--melo-cream);
+  color: var(--melo-text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+}
+
+.floral-bg {
+  background-color: var(--melo-cream);
+  background-image:
+    radial-gradient(ellipse at 20% 20%, rgba(212, 116, 140, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 10%, rgba(155, 126, 200, 0.10) 0%, transparent 40%),
+    radial-gradient(ellipse at 60% 80%, rgba(138, 175, 142, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 10% 80%, rgba(212, 168, 71, 0.08) 0%, transparent 40%);
+}
+
+.font-display { font-family: var(--font-display); }
+.font-body    { font-family: var(--font-body); }
+
+.nav-tab {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--melo-text-muted);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
+}
+.nav-tab:hover {
+  background: var(--melo-parchment);
+  color: var(--melo-blush);
+  border-color: var(--melo-blush-light);
+}
+.nav-tab.active {
+  background: var(--melo-blush);
+  color: white;
+  border-color: var(--melo-blush);
+}
+
+.nav-group-btn {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--melo-text-muted);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.nav-group-btn:hover {
+  background: var(--melo-parchment);
+  color: var(--melo-lavender);
+  border-color: var(--melo-lavender-lt);
+}
+
+.melo-card {
+  background: rgba(255,255,255,0.7);
+  border: 1.5px solid var(--melo-border);
+  border-radius: 1.25rem;
+  backdrop-filter: blur(8px);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.melo-card:hover {
+  box-shadow: 0 8px 32px rgba(155,126,200,0.12), 0 2px 8px rgba(212,116,140,0.08);
+  transform: translateY(-2px);
+}
+
+.petal-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--melo-blush-light), var(--melo-lavender-lt), var(--melo-sage-light), transparent);
+  border: none;
+  margin: 2rem 0;
+}
+
+.safety-banner {
+  background: linear-gradient(135deg, rgba(155,126,200,0.1), rgba(212,116,140,0.08));
+  border: 1.5px solid var(--melo-lavender-lt);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--melo-cream); }
+::-webkit-scrollbar-thumb { background: var(--melo-blush-light); border-radius: 3px; }

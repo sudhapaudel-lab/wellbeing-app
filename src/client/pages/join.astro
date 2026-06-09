@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/nav/Navbar';
+import Footer from '../components/layout/Footer';
+import AuthForm from '../components/AuthForm/AuthForm';
+---
+
+<BaseLayout title="Join Melo — Melo">
+  <Navbar client:load />
+
+  <AuthForm mode="signup" client:load />
+
+  <Footer client:load />
+</BaseLayout>

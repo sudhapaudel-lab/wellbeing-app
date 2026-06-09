@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../client/components/nav/Navbar';
+import Footer from '../client/components/layout/Footer';
+---
+<BaseLayout title="Safety — Melo">
+  <Navbar client:load />
+  <main class="max-w-4xl mx-auto px-4 py-20 text-center">
+    <span class="text-xs font-bold uppercase tracking-widest" style="color:var(--melo-sage)">
+      melo.com/safety
+    </span>
+    <h1 class="font-display text-5xl font-semibold mt-2 mb-4" style="color:var(--melo-text)">
+      Safety
+    </h1>
+    <p style="color:var(--melo-text-muted)" class="text-lg max-w-md mx-auto">
+      Full module coming soon — wired up and ready for its own component.
+    </p>
+    <a href="/" class="inline-block mt-8 nav-tab" style="background:var(--melo-blush);color:white;border-color:var(--melo-blush)">
+      Back to Home
+    </a>
+  </main>
+  <Footer client:load />
+</BaseLayout>
