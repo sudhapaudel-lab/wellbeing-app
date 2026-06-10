@@ -12,27 +12,27 @@ import type { DropdownItem } from "../types";
 export const SCREENING_ITEMS: DropdownItem[] = [
   {
     label: "Breathing Exercises",
-    href: "https://breathing.melo.com",
+    href: "/breathing-exercise",
     icon: Wind,
-    external: true,
+    external: false,
   },
   {
     label: "Focus Timer",
-    href: "https://focustimer.melo.com",
+    href: "/focus-timer",
     icon: Timer,
-    external: true,
+    external: false,
   },
   {
     label: "Ambient Sound",
-    href: "https://ambientsound.melo.com",
+    href: "/ambient-sound",
     icon: Music,
-    external: true,
+    external: false,
   },
   {
     label: "AI Self Help",
-    href: "https://aiselfhelp.melo.com",
+    href: "/ai-self-help",
     icon: BotMessageSquare,
-    external: true,
+    external: false,
   },
 ];
 
