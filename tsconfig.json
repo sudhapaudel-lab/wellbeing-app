@@ -8,7 +8,7 @@
     "dist"
   ],
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+      "target": "ESNext",
+      "types": ["@cloudflare/workers-types"]
   }
 }
