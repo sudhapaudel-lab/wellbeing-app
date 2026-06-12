@@ -3,12 +3,12 @@
 // export dynamically through wrangler, or we can potentially let users directly
 // add them as a sort of "plugin" system.
 
-import ENTRY, { __INTERNAL_WRANGLER_MIDDLEWARE__ } from "/home/ganga/Desktop/MentalHealth/wellbeing-app/.wrangler/tmp/bundle-eCdKDK/middleware-insertion-facade.js";
-import { __facade_invoke__, __facade_register__, Dispatcher } from "/home/ganga/Desktop/MentalHealth/wellbeing-app/node_modules/wrangler/templates/middleware/common.ts";
-import type { WorkerEntrypointConstructor } from "/home/ganga/Desktop/MentalHealth/wellbeing-app/.wrangler/tmp/bundle-eCdKDK/middleware-insertion-facade.js";
+import ENTRY, { __INTERNAL_WRANGLER_MIDDLEWARE__ } from "E:\\wellbeing-app\\.wrangler\\tmp\\bundle-hRkBmC\\middleware-insertion-facade.js";
+import { __facade_invoke__, __facade_register__, Dispatcher } from "E:\\wellbeing-app\\node_modules\\wrangler\\templates\\middleware\\common.ts";
+import type { WorkerEntrypointConstructor } from "E:\\wellbeing-app\\.wrangler\\tmp\\bundle-hRkBmC\\middleware-insertion-facade.js";
 
 // Preserve all the exports from the worker
-export * from "/home/ganga/Desktop/MentalHealth/wellbeing-app/.wrangler/tmp/bundle-eCdKDK/middleware-insertion-facade.js";
+export * from "E:\\wellbeing-app\\.wrangler\\tmp\\bundle-hRkBmC\\middleware-insertion-facade.js";
 
 class __Facade_ScheduledController__ implements ScheduledController {
 	readonly #noRetry: ScheduledController["noRetry"];

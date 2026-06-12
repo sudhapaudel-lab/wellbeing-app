@@ -19,6 +19,6 @@ app.get("/api/health", (c) => c.json({ status: "Healthy!" }));
 
 app.route("/api/auth", authRoutes);
 
-app.route("/api/mood", moodRoutes);
+app.route("/api/moods", moodRoutes);
 
 export default app;
