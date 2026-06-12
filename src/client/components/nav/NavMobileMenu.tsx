@@ -20,7 +20,7 @@ export default function NavMobileMenu({ open }: NavMobileMenuProps) {
       </a>
 
       <a
-        href="https://screening.melo.com"
+        href="/screening"
         className="nav-tab w-fit"
         target="_blank"
         rel="noopener noreferrer"

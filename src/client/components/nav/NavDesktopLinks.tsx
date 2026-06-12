@@ -18,7 +18,7 @@ export default function NavDesktopLinks({ currentPath }: NavDesktopLinksProps) {
 
       {/* Screening — direct external link */}
       <a
-        href="https://screening.melo.com"
+        href="/screening"
         className="nav-tab"
         target="_blank"
         rel="noopener noreferrer"
