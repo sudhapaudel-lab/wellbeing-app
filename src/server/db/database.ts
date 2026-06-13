@@ -22,4 +22,17 @@ export const createTables = async (db: D1Database) => {
             FOREIGN KEY (user_id) REFERENCES users(id)
         )
     `).run();
+    await db.prepare(`
+    CREATE TABLE IF NOT EXISTS screenings (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id INTEGER NOT NULL,
+        phq9_score INTEGER NOT NULL,
+        gad7_score INTEGER NOT NULL,
+        phq9_severity TEXT NOT NULL,
+        gad7_severity TEXT NOT NULL,
+        answers TEXT NOT NULL,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY (user_id) REFERENCES users(id)
+    )
+`).run();
 };
