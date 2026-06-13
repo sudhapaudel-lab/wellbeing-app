@@ -3,6 +3,8 @@ import type { D1Database } from "@cloudflare/workers-types";
 import { createTables } from "./db/database";
 import authRoutes from "./routes/auth";
 import moodRoutes from "./routes/mood";
+import screeningRoutes from "./routes/screening";
+
 
 type Bindings = {
     DB: D1Database;
@@ -19,6 +21,8 @@ app.get("/api/health", (c) => c.json({ status: "Healthy!" }));
 
 app.route("/api/auth", authRoutes);
 
-app.route("/api/moods", moodRoutes);
+app.route("/api/mood", moodRoutes);
+
+app.route("/api/screening", screeningRoutes);
 
 export default app;
